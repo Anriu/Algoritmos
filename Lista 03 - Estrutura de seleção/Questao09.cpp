@@ -31,7 +31,7 @@ int main(){
         break;
     
     default:
-        printf("Sexo inválido");
+        printf("Sexo indisponivel");
         break;
     }
     
