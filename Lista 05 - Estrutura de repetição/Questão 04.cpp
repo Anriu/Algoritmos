@@ -10,24 +10,32 @@ int main(){
     Esses valores (negativos) não entrarão nos cálculos*/
     setlocale(LC_ALL,"Portuguese");
 
-    int valor, valorAnterior = 0, valorMenor,valorMaior;
+    int valor, incializador = 1, valorMenor,valorMaior;
 
     do{
+        
         printf("Informe um valor: ");
         scanf("%d", &valor);
 
         if(valor >= 0){
             if(valor != 0){
-                if (valor > valorAnterior){
-                    valorMaior = valor;
-                } else if (valor < valorAnterior){
-                    valorMenor = valor;
+                if(incializador == 1){
+                    valorMaior = valorMenor = valor;
+                    incializador = 0;
+                } else{
+                    if(valor > valorMaior){
+                        valorMaior = valor;
+                    }
+                    if(valor < valorMenor){
+                        valorMenor = valor;
+                    }
                 }
             }
+
         } else{
             printf("Esses valores (negativos) não entrarão nos cálculos\n");
         }
-        valorAnterior = valor;
+        
     } while (valor != 0);
     
     printf("O maior valor %d\n", valorMaior);

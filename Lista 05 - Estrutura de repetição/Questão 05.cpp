@@ -10,18 +10,16 @@ int main(){
     setlocale(LC_ALL,"Portuguese");
     
     int numero, numeroPrimo = 0, count;
-    float resto;
     printf("Informe um número: ");
     scanf("%d", &numero);
 
     for(count = 2; count < numero; count++){
-        resto = numero%count;
-        if(resto == 0){
+        if(numero%count == 0){
             numeroPrimo++;
         }
     }
 
-    if(numeroPrimo > 0){
+    if(numeroPrimo != 0){
         printf("%d não é primo.\n", numero);
     }else{
         printf("%d é primo.\n", numero);
