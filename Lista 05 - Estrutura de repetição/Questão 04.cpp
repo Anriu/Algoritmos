@@ -20,7 +20,8 @@ int main(){
         if(valor >= 0){
             if(valor != 0){
                 if(incializador == 1){
-                    valorMaior = valorMenor = valor;
+                    valorMaior = valor;
+                    valorMenor = valor;
                     incializador = 0;
                 } else{
                     if(valor > valorMaior){
