@@ -27,7 +27,16 @@ int main(){
 
     media = soma/4;
     printf("Aluno: %s\n", nome);
-    printf("Media %.2f",media);
+    printf("Media %.2f\n",media);
+    
+    if (media > 7){
+        printf("O aluno esta aprovado");
+    }else if(media < 4){
+        printf("O aluno esta reprovado");
+    }else{
+        printf("O aluno esta de recuperacao");
+    }
+    
 
     return 0;
 }
