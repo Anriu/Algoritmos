@@ -23,11 +23,15 @@ int main(){
 
         contadorPrimos = 0;
 
-        for(j = 2; j < k[i]; j++){
-            if(k[i]%j==0){
-                contadorPrimos++;
-                break;
+        if(k[i] >= 2){
+            for(j = 2; j < k[i]; j++){
+                if(k[i]%j==0){
+                    contadorPrimos++;
+                    break; 
+                }
             }
+        }else{
+            contadorPrimos = 1;
         }
 
         if(contadorPrimos == 0){
