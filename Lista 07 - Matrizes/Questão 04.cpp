@@ -12,12 +12,20 @@ int main (){
 
     for(linha = 0; linha < 8; linha++){
         for(coluna = 0; coluna < 8; coluna++){
-            //matriz[linha][coluna] = rand() % 10; //Para gerar um numero aleatorio ate 10 para o usuario nao ter que informar nenhum valor 
-            printf("Informe um valor para a matriz[%d][%d]: ", linha, coluna);
-            scanf("%d", &matriz[linha][coluna]);
+            matriz[linha][coluna] = rand() % 10; //Para gerar um numero aleatorio ate 10 para o usuario nao ter que informar nenhum valor 
+            //printf("Informe um valor para a matriz[%d][%d]: ", linha, coluna);
+            //scanf("%d", &matriz[linha][coluna]);
         }
     }
-
+    
+    system("cls");
+    printf("Matriz Informada: \n");
+    for(linha = 0; linha < 8; linha++){
+        for(coluna = 0; coluna < 8; coluna++){
+            printf("%-4d", matriz[linha][coluna]);
+        }
+        printf("\n");
+    }
 
     for(linha = 0; linha < 8; linha++){
         for(coluna = 0; coluna < 8; coluna++){
@@ -26,10 +34,8 @@ int main (){
             }         
         }
     }
-
-
-    system("cls");
-    printf("Matriz Informada: \n");
+   
+    printf("\n\nMatriz triangular superior da matriz informada: \n");
     for(linha = 0; linha < 8; linha++){
         for(coluna = 0; coluna < 8; coluna++){
             printf("%-4d", matriz[linha][coluna]);
