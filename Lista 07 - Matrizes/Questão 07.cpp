@@ -31,7 +31,7 @@ int main()
     printf("Matriz informada:\n");
     for (linha = 0; linha < 6; linha++){
         for (coluna = 0; coluna < 6; coluna++){
-            printf("%d ", matriz[linha][coluna]);
+            printf("%-4d", matriz[linha][coluna]);
         }
         printf("\n");
     }

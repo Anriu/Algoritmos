@@ -15,7 +15,8 @@ int main (){
 
     for(linha = 0; linha < 5; linha++){
         for(coluna = 0; coluna < 5; coluna++){
-            //matriz[linha][coluna] = rand() % 10; //Para gerar um numero aleatorio ate 10 para o usuario nao ter que informar nenhum valor
+            //matriz[linha][coluna] = rand() % 10; //Para gerar um numero aleatorio ate 10 para o usuario nao ter que informar nenhum valor 
+            printf("Informe um valor para a matriz[%d][%d]: ", linha, coluna);
             scanf("%d", &matriz[linha][coluna]);
         }
     }

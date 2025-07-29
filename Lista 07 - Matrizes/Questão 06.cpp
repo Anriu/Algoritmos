@@ -22,7 +22,7 @@ int main (){
     printf("Matriz informada:\n");
     for(linha = 0; linha < 4; linha++){
         for(coluna = 0; coluna < 4; coluna++){
-            printf("%d ", matriz[linha][coluna]);
+            printf("%-4d", matriz[linha][coluna]);
         }
         printf("\n");
     }  

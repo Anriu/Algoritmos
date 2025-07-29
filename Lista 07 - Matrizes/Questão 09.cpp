@@ -35,7 +35,7 @@ int main(){
 
     printf("\n\nVetor da soma das Linhas :\n");
     for(linha = 0; linha < 20; linha++){
-        printf("%d ",somaLinha[linha]);
+        printf("%-4d",somaLinha[linha]);
     }
 
     for(linha = 0; linha < 20; linha++){
@@ -47,7 +47,7 @@ int main(){
     printf("\n\n\nMatriz[20][20] gerada pela multiplicacao com o vetor:\n");
     for (linha = 0; linha < 20; linha++){
         for (coluna = 0; coluna < 20; coluna++){
-            printf("%d ", matriz[linha][coluna]);
+            printf("%-6d", matriz[linha][coluna]);
         }
         printf("\n");
     }

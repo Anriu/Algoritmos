@@ -32,7 +32,7 @@ int main (){
     printf("Matriz Informada: \n");
     for(linha = 0; linha < 8; linha++){
         for(coluna = 0; coluna < 8; coluna++){
-            printf("%d ", matriz[linha][coluna]);
+            printf("%-4d", matriz[linha][coluna]);
         }
         printf("\n");
     }  

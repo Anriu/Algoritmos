@@ -34,7 +34,7 @@ int main(){
     printf("Matriz[5][5] gerada aleatoriamente:\n");
     for (linha = 0; linha < 5; linha++){
         for (coluna = 0; coluna < 5; coluna++){
-            printf("%d ", matriz[linha][coluna]);
+            printf("%-4d", matriz[linha][coluna]);
         }
         printf("\n");
     }
