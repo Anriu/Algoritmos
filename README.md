@@ -1,2 +1,2 @@
 # Algoritmos
-Atividades da matéria de algoritimos do curso de ADS
+Atividades da matéria de algoritimos 1
